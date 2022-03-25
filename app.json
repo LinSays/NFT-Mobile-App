@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Sekai",
+    "slug": "SEKAI",
+    "privacy": "public",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "0.7.3",
+    "orientation": "portrait",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#030302"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "icon": "./assets/images/ios.icon.png",
+      "bundleIdentifier": "sekai.app",
+      "supportsTablet": true,
+      "buildNumber": "31"
+    },
+    "android": {
+      "icon": "./assets/images/android.icon.png",
+      "useNextNotificationsApi": true,
+      "package": "sekai.app",
+      "versionCode": 31
+    },
+    "userInterfaceStyle": "automatic",
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "sentry-expo/upload-sourcemaps",
+          "config": {
+            "organization": "sekai",
+            "project": "sekai.app",
+            "authToken": null
+          }
+        }
+      ]
+    },
+    "description": "Built by Elliot ",
+    "githubUrl": "https://github.com/LinSays"
+  }
+}
